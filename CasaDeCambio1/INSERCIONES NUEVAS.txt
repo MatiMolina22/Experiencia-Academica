@@ -1,0 +1,71 @@
+--CONSULTA 13
+insert into clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido, fec_nac)
+values (3,502,1,NULL,'25665484','./firmas/clientes/JorgeAmato.jpg','Jorge','Amato','15/06/1990')
+insert into clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido, fec_nac)
+values (1,1235,1,NULL,'23418832','./firmas/clientes/MBustos.jpg','Martin','Bustos','28/09/1990')
+
+--CONSULTA 7:
+insert into transacciones(id_recibo,id_tipo_transaccion,id_tipo_moneda_egreso,id_tipo_moneda_ingreso,id_motivo,id_forma_pago,monto_egreso,monto_ingreso)
+values (1,2,1,4,2,1,1000,200)
+
+--CONSULTA 8
+insert into clientes(id_calle,altura,id_identificacion,telefono,nombre,apellido)
+values (2,144,1,'15504546','Javier','Gonzales')
+
+
+--CONSULTA 5 
+insert into recibos values (3,2,'03-02-2020 15:55:00')
+insert into recibos values (6,5,'12-03-2020 09:12:00')
+insert into recibos values (7,1,'30-03-2020 11:05:00')
+
+--CONSULTA 14 
+insert into
+clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido,fec_nac)
+values(1,145,1,'3513354789','28080288',NULL,'Daniel','Rodriguez','04/08/1980')
+
+insert into
+clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido,fec_nac)
+values(2,890,1,'3514478548','25678910',NULL,'Gabriel','Tessio','09/10/1975')
+
+
+--15 - Listar el nombre de la calle, del barrio, y de la localidad de los cajeros nacidos entre febrero de 1999 y julio de 2001
+insert into
+cajeros (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido,fec_nac)
+values(5,3245,1,'3516857412','40856212','./firmas/cajeros/jeremiasPolioto.jpg','Jeremias','Polioto','03-02-2000 15:55:00')
+
+insert into
+cajeros (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido,fec_nac)
+values(2,963,1,'3512136699','41224519','./firmas/cajeros/teoGutierrez.jpg','Teofilo','Gutierrez','06-13-2000 10:30:00')
+
+insert into
+cajeros (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido,fec_nac)
+values(4,1050,3,'3515468014','39218820','./firmas/cajeros/carlapizarro.jpg','Carla','Pizarro','12-30-1999 04:50:00')
+
+
+
+--13 - Mostrar provincia, localidad, barrio y calle de los clientes con apellidos que empiecen 
+--con “A,D,J y K” que hayan tengan como fecha de nacimiento mayor a 1990. 
+--También mostrar a los clientes que tengan NULL en el campo “teléfono”.  
+
+insert into clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido, fec_nac)
+values (6,586,1,NULL,'3056841','./firmas/clientes/MBustos.jpg','Mariano','Aschaval','12-30-1990 04:50:00')
+
+insert into clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido, fec_nac)
+values (3,558,1,NULL,'30584275','./firmas/clientes/PDertu.jpg','Paula','Dertu','05-18-1990 01:02:00')}
+
+insert into clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido, fec_nac)
+values (1,1023,1,NULL,'31583154','./firmas/clientes/PDertu.jpg','Laura','Jorga','06-25-1990 19:13:00')
+
+insert into clientes (id_calle,altura,id_identificacion,telefono,nro_identificacion,firma,nombre,apellido, fec_nac)
+values (4,3254,1,NULL,'31025325','./firmas/clientes/CKriquen.jpg','Carlos','Kriquen','10-04-1990 20:15:00')
+
+--5-Cajeros que hayan atendido clientes en los 3 primeros meses del año 2020 
+
+insert into recibos (id_cajero,id_cliente,fecha_hora)
+values (2,3,'10-05-2020 15:03:00')
+insert into recibos (id_cajero,id_cliente,fecha_hora)
+values (5,8,'01-03-2020 10:15:00')
+insert into recibos (id_cajero,id_cliente,fecha_hora)
+values (4,8,'01-03-2020 13:10:00')
+insert into recibos (id_cajero,id_cliente,fecha_hora)
+values (3,5,'08-15-2020 14:10:00')
